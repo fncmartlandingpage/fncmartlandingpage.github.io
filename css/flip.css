@@ -81,8 +81,28 @@
     margin-right: 0px;
   }
   .unit-list .item {
-    width: 30px;
-    margin-left: 27px;
-    margin-right: 26px;
+    width: 65px;
+    margin-right: 16px;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .one {
+    margin-left: 56px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .number-list .item {
+    margin-left: 19px;
+    margin-right: 0px;
+  }
+  .unit-list .item {
+    width: 52px;
+    margin-right: 16px;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .one {
+    margin-left: 39px;
   }
 }

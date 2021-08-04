@@ -14,7 +14,7 @@
 
 <body>
     <div style="text-align: right; margin-right: 20px; margin-top: 10px;">
-        <i class="fa fa-map-marker" aria-hidden="true" style="color: #001C41; font-size: 20px;" >  <u>Dehradun</u></i>
+        <i class="fa fa-map-marker" aria-hidden="true" style="color: #001C41; font-size: 20px;"> <u>Dehradun</u></i>
 
     </div>
 
@@ -29,7 +29,8 @@
                 <p class="head2">Are You Ready?</p>
                 <form method="post" name="sign-up">
                     <div class="input">
-                        <input type="text" class="button" id="email" name="E-mail" placeholder="Your Email" style="  color: white;">
+                        <input type="text" class="button" id="email" name="E-mail" placeholder="Your Email"
+                            style="  color: white;">
                         <input type="submit" class="button" id="submit" value="NOTIFY ME" style="  color: white;">
                     </div>
                 </form>
@@ -41,7 +42,7 @@
                         <div class="item" data-seconds="">00</div>
                     </div>
                     <div class="unit-list">
-                        <div class="item">Days</div>
+                        <div class="item one">Days</div>
                         <div class="item">Hours</div>
                         <div class="item">Minutes</div>
                         <div class="item">Seconds</div>
@@ -50,8 +51,9 @@
 
 
                 <div class="social">
-                    <a href="https://www.facebook.com/fncmartgroup" target="_blank" ><img src="./img/facebook.png"></a>
-                    <a href="https://in.linkedin.com/company/fresh-n-clean-mart" target="_blank"><img src="./img/linkedin (1).png"></a>
+                    <a href="https://www.facebook.com/fncmartgroup" target="_blank"><img src="./img/facebook.png"></a>
+                    <a href="https://in.linkedin.com/company/fresh-n-clean-mart" target="_blank"><img
+                            src="./img/linkedin (1).png"></a>
                     <a href="https://www.instagram.com/fncmartgroup/" target="_blank"><img src="./img/insta.png"></a>
                 </div>
             </div>
@@ -73,14 +75,15 @@
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwfmvfg-sL8UhGcFrESTqojh8PtnunnGu_ApCF900eGBIJC81cajfz6XNnHMibsE1A1Qw/exec'
     const form = document.forms['sign-up']
-  
+
     form.addEventListener('submit', e => {
-        
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => alert("Thanks for being awesome! We are more excited to get in touch with you soon :)"))
-        .catch(error => console.error('Error!', error.message))
+
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => alert("Thanks for being awesome! We are more excited to get in touch with you soon :)"))
+            .catch(error => console.error('Error!', error.message))
     }
     );
 </script>
+
 </html>
