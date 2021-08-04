@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/flip.css">
+    <link rel="stylesheet" type="text/css" href="./css/Bootstrap4.5.2/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <div style="text-align: right; margin-right: 20px; margin-top: 10px;">
+        <i class="fa fa-map-marker" aria-hidden="true" style="color: #001C41; font-size: 20px;" >  <u>Dehradun</u></i>
+
+    </div>
+
+    <div class="centre">
+        <img src="./img/fncmart.png">
+    </div>
+    <div class="container-fluid">
+        <div class="row flex-column-reverse flex-lg-row"
+            style="text-align: center;padding: 0px !important; margin: 0px !important;">
+            <div class="col-md-12 col-lg-6" style="padding: 20px; margin: 0px !important;">
+                <p class="head1">Coming<br />Soon</p>
+                <p class="head2">Are You Ready?</p>
+                <form method="post" name="sign-up">
+                    <div class="input">
+                        <input type="text" class="button" id="email" name="E-mail" placeholder="Your Email" style="  color: white;">
+                        <input type="submit" class="button" id="submit" value="NOTIFY ME" style="  color: white;">
+                    </div>
+                </form>
+                <div id="timer">
+                    <div class="number-list">
+                        <div class="item" data-days="">00</div>
+                        <div class="item" data-hours="">00</div>
+                        <div class="item" data-minutes="">00</div>
+                        <div class="item" data-seconds="">00</div>
+                    </div>
+                    <div class="unit-list">
+                        <div class="item">Days</div>
+                        <div class="item">Hours</div>
+                        <div class="item">Minutes</div>
+                        <div class="item">Seconds</div>
+                    </div>
+                </div>
+
+
+                <div class="social">
+                    <a href="https://www.facebook.com/fncmartgroup" target="_blank" ><img src="./img/facebook.png"></a>
+                    <a href="https://in.linkedin.com/company/fresh-n-clean-mart" target="_blank"><img src="./img/linkedin (1).png"></a>
+                    <a href="https://www.instagram.com/fncmartgroup/" target="_blank"><img src="./img/insta.png"></a>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6" style=" padding-left:1px !important;padding: 0px; margin: 0px !important;">
+                <img src="./img/Web const img.png" style="width: 100%;">
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src='./js/jquery-3.6.0.js'></script>
+    <script type="text/javascript" src="./js/Bootstrap4.5.2 js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/flip.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+<!-- Script to send data to google sheet-->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwfmvfg-sL8UhGcFrESTqojh8PtnunnGu_ApCF900eGBIJC81cajfz6XNnHMibsE1A1Qw/exec'
+    const form = document.forms['sign-up']
+  
+    form.addEventListener('submit', e => {
+        
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for being awesome! We are more excited to get in touch with you soon :)"))
+        .catch(error => console.error('Error!', error.message))
+    }
+    );
+</script>
+</html>

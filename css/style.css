@@ -1,0 +1,175 @@
+/* .body {
+  
+     b8f374 f2fde4 027cd6 fdb721  199a1f
+*/
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Playball&family=Style+Script&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 30 changes */
+
+body {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, #F17516 0%, #FEDC79 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+
+.centre img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    height: 15vh;
+}
+
+.container-fluid {
+    width: 100vw !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 85vh !important;
+}
+
+.head1 {
+    font-size: 70pt;
+    font-family: 'Style Script', cursive;
+    color: #001C41;
+    line-height: 1.2;
+}
+
+.head2 {
+    margin-top: 5%;
+    font-size: 20pt;
+    font-family: 'Leelawadee UI';
+    color: #001C41;
+}
+form{
+    padding: 30px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.button {
+    height: 30pt;
+    border: none;
+}
+
+#email {
+    width: 75%;
+    background: transparent;
+    font-family: 'Leelawadee UI';
+    color: #000000;
+    letter-spacing: 1px;
+    text-indent: 5%;
+    border-radius: 16px 0 0 16px !important;
+    outline: none;
+    border: 2px solid #111D5E;
+}
+
+#submit {
+    width: 25%;
+    height: 30pt;
+    background: #111d5ebe;
+    font-family: 'Leelawadee UI';
+    /* font-weight: bold; */
+    /* color: inherit; */
+    letter-spacing: 1px;
+    border-radius: 0 16px 16px 0;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+    outline: none;
+}
+
+#submit:hover {
+    background: #111D5E;
+}
+
+input:focus {
+    outline: none;
+    outline: 2px solid #001c41;
+    box-shadow: 0 0 2px #001c41;
+}
+
+.social {
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+.unit-list .item{
+    font-size: 10pt !important;
+}
+.number-list .item{
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%,#ffedd581 0%, #ffaf4d7c 100%) !important;
+}
+
+.social img {
+    /* margin-top: 4%; */
+    padding: 0 10px 0 10px;
+    height: 25px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    whitesmoke;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    whitesmoke;   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    whitesmoke;   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    whitesmoke;}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color:    whitesmoke;}
+
+::placeholder { /* Most modern browsers support this now. */
+    color:    whitesmoke;}
+
+/* .fix{
+    position:fixed;
+    top:0px;
+    left:50%;
+    background-attachment: fixed;
+    height: 100vh;
+} */
+
+.parentbox {display:flex; flex-flow:row wrap;}
+
+
+@media screen and (max-width: 425px) {
+    #submit {
+        letter-spacing: -1.6px;
+        
+    }
+ 
+}
+
+@media screen and (min-width: 1024px) and (max-width:1440px) {
+    body{
+        overflow-y: hidden;
+    }
+    .centre img{
+        height: 10vh;
+    }
+    .head1 {
+        font-size: 70pt;
+        line-height: 1;
+    }
+    
+    .head2 {
+        font-size: 16pt;
+    }
+    form{
+        padding: 20px;
+    }
+}
