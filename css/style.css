@@ -146,10 +146,10 @@ input:focus {
 .parentbox {display:flex; flex-flow:row wrap;}
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
     #submit {
-        letter-spacing: -1.6px;
-        
+        letter-spacing: 0.4px;
+        width: 50%;
     }
  
 }
